@@ -30,7 +30,7 @@ rescue => err
 end
 
 current_campaign = "#{campaign_prefix}"+ ("%02d" % campaign_start_number)
-current_group = "#{campaign_prefix}#{campaign_start_number}" + "_" + ("%05d" % keyword_num) + "-" + ("%05d" % (keyword_num + max_keywords_per_group - 1))
+current_group = current_campaign + "_" + ("%05d" % keyword_num) + "-" + ("%05d" % (keyword_num + max_keywords_per_group - 1))
 
 while (line = infile.gets)
 # new group
